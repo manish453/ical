@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Subscription</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+			body {
+				background: #ddd
+			}
+
+			.container-fluid {
+				height: 100vh;
+				overflow: hidden;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			h2 {
+				color: #007b5e;
+				margin-bottom: 0;
+				text-decoration: none
+			}
+
+			#subscribeModal .btn {
+				border-radius: 30px;
+				padding-right: 20px;
+				background: #007b5e;
+				border-color: #007b5e
+			}
+
+			body .top-strip {
+				height: 155px;
+				width: 280px;
+				background: #007b5e;
+				transform: rotate(141deg);
+				border-bottom: 65px solid #4caf50;
+				border-top: 10px solid #4caf50;
+				position: absolute;
+				top: -61px;
+				left: -100px
+			}
+
+			body .bottom-strip {
+				height: 155px;
+				width: 280px;
+				background: #007b5e;
+				transform: rotate(135deg);
+				border-bottom: 65px solid #4caf50;
+				border-top: 10px solid #4caf50;
+				position: absolute;
+				bottom: -61px;
+				right: -100px
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container-fluid">
+			<div class="top-strip"></div>
+			<div class="text-center py-5 subscribeModal-lg" id="subscribeModal">
+				<div class="modal-body">
+					<h2>Subscription</h2>
+					<h3 class="pt-5 mb-0 text-secondary">Let's make it easy to know our events</h3>
+					<p class="pb-1 text-muted"><small>Just click on Subscribe button to add our Subscription</small></p>
+					<button class="btn btn-primary" id="button-addon2" type="button">Subscribe</button>
+					<p class="pb-1 text-muted"></p>
+				</div>
+			</div>
+			<div class="bottom-strip"></div>
+		</div>
+		<script>
+			$(document).ready(function(){
+				$('#button-addon2').on('click', function () {
+				    window.location.href = 'webcal://1673333600.rsc.cdn77.org/calendars/eventList.ics';
+			    })
+			})
+		
+//- var Calendar = Application("Calendar")
+//- Calendar.geturl("webcal:https://1673333600.rsc.cdn77.org/calendars/US32Holidays.ics")</script>
+	</body>
+
+</html>

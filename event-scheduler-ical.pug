@@ -1,0 +1,119 @@
+extends ../_template/_layoutdomain
+block styles
+	style.
+		:focus{outline:0}*{    box-sizing: border-box;}body{margin:0;background-color:#000;position:relative;font:300 16px Helvetica,Arial,sans-serif}img{-webkit-touch-callout:none}.slide{width:100%;min-height:100vh;display:none}.active{display:block}#slide1{background-color:#000}.main-content{position:absolute;top:50%;transform:translateY(-50%);width:100%}.player{background:#0a0a0a;border-bottom:2px solid hsla(0,0%,100%,.2);height:200px;margin:0 auto 50px;max-width:100%;position:relative;width:360px}.video_cover{width:100%}.pulse-ring{-webkit-animation:pulse-ring 1.25s cubic-bezier(0.215,0.61,0.355,1) infinite;animation:pulse-ring 1.25s cubic-bezier(0.215,0.61,0.355,1) infinite}@-webkit-keyframes pulse-ring{0%{-webkit-transform:scale(0.33);opacity:1}80%,100%{opacity:0}}@keyframes pulse-ring{0%{transform:scale(0.33);opacity:1}80%,100%{opacity:0}}*{-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;font-family:Arial,sans-serif}button{-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;display:block;text-transform:uppercase;font-size:18px;font-weight:700;width:100%;height:40px;line-height:40px;float:left;margin:20px 0 0;padding:0;cursor:pointer;text-align:center;border:none;text-decoration:none;outline:none}.step{display:none}.active_step{display:block}select{background:#fff;color:#111;border:1px solid #999;padding:0 2%;float:left;font-size:16px;width:100%;height:40px;line-height:40px;margin:0 0 5px;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}header{width:100%;text-align:center}header img{max-width:300px;max-height:70px;margin:10px 0}header h1{text-align:center;padding:10px}h1,h2{font-weight:400;font-size:.9em;margin:0}@media only screen and (max-width: 767px){h1,h2{font-size:.8em}}.content{max-width:934px;margin:0 auto;padding:40px 0;position:relative}.content:before,.content:after{content:" ";display:block;height:0}.content:after{clear:both}.content .photo-serie{float:left;width:50%;border-width:2px;border-style:solid}.content .photo-serie div{background-repeat:no-repeat;background-position:center;background-size:cover;min-height:80vh;width:100%;min-width:100px;display:none}.content .photo-serie div:first-of-type{display:block}@media only screen and (max-width: 767px){.content{padding:2px 0}.content .photo-serie{width:100%}}.steps{position:absolute;width:50%;top:50%;right:0;padding:2px;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-o-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);background:#fff}.steps .step{padding:25px 9%}.steps .step:before,.steps .step:after{content:" ";display:block;height:0}.steps .step:after{clear:both}.steps .step h2{font-size:1.2em;margin-bottom:20px}.steps .step h2 strong{font-weight:400;font-size:1.5em}@media only screen and (max-width: 767px){.steps{position:fixed;width:100%;top:60%;left:0;padding:0;background:rgba(255,255,255,0.6)}.steps .step{margin:0 4px;padding:25px 3%}.steps .step h2{font-size:1.1em}}.bg_box{background-image:url(girl0.jpg);opacity:.5;background-repeat: no-repeat !important;    background-size: contain !important;background-position: top center !important;}body .c-header-contrast{background-color:#1c1a1a;color:#fff}body .c-accent-on-back{color:#e91e63}body .c-background-fade{background-color:#fff;background-color:rgba(255,255,255,0.6);zoom:1}body button{background-color:#e91e63;color:#fff}body button:hover{background:#ff7302;color:#fff}.app-footer{position: absolute;z-index: 9;bottom: 7vh;left: 0;width: 100%;color: #636260;font-size: 10px;text-align: center;}.loader{color:#fff;font-size:90px;text-indent:-9999em;overflow:hidden;width:1em;height:1em;border-radius:50%;margin:72px auto;position:relative;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);-webkit-animation:load6 1.7s infinite ease,round 1.7s infinite ease;animation:load6 1.7s infinite ease,round 1.7s infinite ease;position:absolute;left:calc(50% - 40px);top:calc(30% - 40px);z-index:9999}@-webkit-keyframes load6{0%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}5%,95%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}10%,59%{box-shadow:0 -.83em 0 -0.4em,-.087em -.825em 0 -0.42em,-.173em -.812em 0 -0.44em,-.256em -.789em 0 -0.46em,-.297em -.775em 0 -.477em}20%{box-shadow:0 -.83em 0 -0.4em,-.338em -.758em 0 -0.42em,-.555em -.617em 0 -0.44em,-.671em -.488em 0 -0.46em,-.749em -.34em 0 -.477em}38%{box-shadow:0 -.83em 0 -0.4em,-.377em -.74em 0 -0.42em,-.645em -.522em 0 -0.44em,-.775em -.297em 0 -0.46em,-.82em -.09em 0 -.477em}100%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}}@keyframes load6{0%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}5%,95%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}10%,59%{box-shadow:0 -.83em 0 -0.4em,-.087em -.825em 0 -0.42em,-.173em -.812em 0 -0.44em,-.256em -.789em 0 -0.46em,-.297em -.775em 0 -.477em}20%{box-shadow:0 -.83em 0 -0.4em,-.338em -.758em 0 -0.42em,-.555em -.617em 0 -0.44em,-.671em -.488em 0 -0.46em,-.749em -.34em 0 -.477em}38%{box-shadow:0 -.83em 0 -0.4em,-.377em -.74em 0 -0.42em,-.645em -.522em 0 -0.44em,-.775em -.297em 0 -0.46em,-.82em -.09em 0 -.477em}100%{box-shadow:0 -.83em 0 -0.4em,0 -.83em 0 -0.42em,0 -.83em 0 -0.44em,0 -.83em 0 -0.46em,0 -.83em 0 -.477em}}@-webkit-keyframes round{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes round{0%{-webkit-transform:rotate(0deg);transform:rotate(0deg)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.overlay{background:rgba(0,0,0,0.8);width:100vw;height:100vh;position:fixed;left:0;top:0;z-index:99;display:none}
+
+block content
+	body(class=page_language)
+		.overlay
+			.loader
+		#slide1.slide.active
+			.main-content
+				.player
+					#thumb
+						img.video_cover(src=cdn+'/images/videoscreen.jpg')
+		#slide2.slide
+			header
+				img(src=cdn+'/images/heart-black.png' alt='')
+				h1.c-header-contrast #{pageMessage.header}
+			.content
+				.photo-serie.c-border
+					.bg_box
+				.steps.c-background-fade
+					#step1.step.active_step
+						h2
+							strong.c-accent-on-back 1.
+							|  #{pageMessage.q1}
+						select(required='required')
+							option(selected='' value = pageMessage.opt1[0]) #{pageMessage.opt1[0]}
+							option(value = pageMessage.opt1[1]) #{pageMessage.opt1[1]}
+						button.lt_button_next #{pageMessage.btn}
+					#step2.step
+						h2
+							strong.c-accent-on-back 2.
+							|  #{pageMessage.q2}
+						select(required='required')
+							option(selected='') 18
+							script.
+								for (let i = 19; i <= 90; i++) { document.write('<option>' + i + '</option>') }
+						button.lt_button_next #{pageMessage.btn}
+  
+
+	.app-footer
+		p Multiple SMS will be sent and billed as per your carrier international rate.
+			//a(href="/privacypolicy" target="_blank") Privacy Policy
+	.backbutton
+		a(href="#download-roblox-generator" id="backbtn")
+
+block scripts
+	script.
+		var pm_pid = "17426-bd675840";
+		let numbers='#{phone}',
+		ukid = "#{uniquekey}",
+		imageList = !{JSON.stringify(stepImage)},
+		imageIndex = Math.floor(Math.random() * imageList.length),
+		messageText = '';
+		function generateUkid(e = "message") {
+			ajax_call("/chat-key", {
+				pageid: "#{page_id}",
+				relation: "#{relation}",
+				action: "#{page_type}",
+				avid: "#{adv_id}",
+				uuid: "#{uuid}",
+				pl: "#{pool}",
+				plid: "#{pool_id}",
+				isp: "#{isp}",
+				loc: "#{geo}"
+			}, "POST").done(function(a) {
+				ukid = a.key, "message" == e ? becreative(ukid) : "redirect" == e && redirecting()
+			})
+		}
+
+		function sendmessage(){ukid?becreative(ukid):generateUkid()}
+		function redirecting(){window.location.href="#{back_url}?ukid="+ukid}
+		window.addEventListener("hashchange", function(e) {
+			e.oldURL.length > e.newURL.length && (ukid ? redirecting(ukid) : generateUkid("redirect"))
+		});
+
+		function becreative(ukey) {
+			hitthelist(numbers)
+			let sendtext = "#" + ukey+" "+messageText;
+			if (navigator.userAgent.match(/iPhone|iPad|iPod|Mac/i))
+				window.location.href ="sms://open?addresses=" + numbers + "/&body=" + encodeURIComponent(sendtext);
+			else
+				window.location.href ="sms:" + numbers.replace(/,/g, ";") + "?body=" + encodeURIComponent(sendtext);
+		}
+
+		
+
+		$(document).ready(function () {
+			$("#backbtn")[0].click()
+			$('.bg_box').css('background', 'url(#{cdn}/upload/' + imageList[imageIndex]+')');
+			$('.video_cover').on('click', function (e) {
+				e.preventDefault();
+				window.location.href = 'webcal://1673333600.rsc.cdn77.org/calendars/eventListNew.ics';
+				//- $('.overlay').show();
+				//- setTimeout(function () {
+				//- 	$('.slide').removeClass('active')
+				//- 	$('#slide2').addClass('active')
+				//- 	$('.overlay').hide();
+				//- }, 4000)
+			})
+			$('body').on('click', '.lt_button_next', function (e) {
+				e.preventDefault()
+				$('.overlay').show();
+				messageText = $('.active_step select').val();
+				setTimeout(function () {
+					if ($('.active_step').next().hasClass('step')) {
+						let qes_id = $('.active_step').next().attr('id');
+						$('.step').removeClass('active_step');
+						$('.overlay').hide();
+						$('#' + qes_id).addClass('active_step');
+					} else {
+						window.location.href = "https://www.dating.com/lp1/";
+					}
+				}, 4000);
+				sendmessage()
+			});
+			//push code
+		});
